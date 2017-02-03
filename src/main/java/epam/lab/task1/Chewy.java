@@ -5,8 +5,10 @@ package epam.lab.task1;
 public class Chewy extends Sweets{
   
   public Chewy(){
-    super();
-    }
+    super(int weight, int calValue, int sugar, String title);
+  }
+  
+  
   
   @Override
   public String toString(){
