@@ -16,7 +16,6 @@ public class MainPresent {
         for (Sweets c : candies) {
             System.out.println(c.getName() + ", " + c.getDescription());
         }
-
         Service.findBySugar();
         Service.collectGift();
 
