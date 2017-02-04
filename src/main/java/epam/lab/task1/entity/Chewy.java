@@ -14,6 +14,11 @@ public class Chewy extends Sweets {
         return TEXT;
     }
 
-
-
+    @Override
+    public String toString() {
+        return "Chewy: (" +
+                "weight = " + getWeight() + ", " +
+                "sugar = " + getSugar() + ", " +
+                "name = " + getName();
+    }
 }

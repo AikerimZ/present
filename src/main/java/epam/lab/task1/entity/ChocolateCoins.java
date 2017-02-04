@@ -13,4 +13,12 @@ public class ChocolateCoins extends Sweets {
     public String getDescription(){
         return TEXT;
     }
+
+    @Override
+    public String toString() {
+        return "ChocolateCoins: (" +
+                "weight = " + getWeight() + ", " +
+                "sugar = " + getSugar() + ", " +
+                "name = " + getName();
+    }
 }

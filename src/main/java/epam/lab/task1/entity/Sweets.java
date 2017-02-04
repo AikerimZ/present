@@ -63,6 +63,9 @@ public abstract class Sweets implements Comparable{
     
     @Override
     public String toString() {
-        return "sugar = " + sugar;
+        return "Sweets: (" +
+                "weight = " + getWeight() + ", " +
+                "sugar = " + getSugar() + ", " +
+                "name = " + getName();
     }
 }

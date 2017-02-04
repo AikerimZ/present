@@ -13,4 +13,12 @@ public class OtherSweets extends Sweets {
     public String getDescription(){
         return TEXT;
     }
+
+    @Override
+    public String toString() {
+        return "Other sweets: (" +
+                "weight = " + getWeight() + ", " +
+                "sugar = " + getSugar() + ", " +
+                "name = " + getName();
+    }
 }
