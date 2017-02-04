@@ -20,32 +20,12 @@ public abstract class Sweets implements Comparable{
         return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
-    }
-
-    public int getCalValue() {
-        return calValue;
-    }
-
-    public void setCalValue(int calValue) {
-        this.calValue = calValue;
-    }
-
     public int getSugar() {
         return sugar;
     }
 
-    public void setSugar(int sugar) {
-        this.sugar = sugar;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public abstract String getDescription();
