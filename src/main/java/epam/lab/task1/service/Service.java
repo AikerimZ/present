@@ -2,7 +2,7 @@ package epam.lab.task1.service;
 
 import epam.lab.task1.entity.Chewy;
 import epam.lab.task1.entity.ChocolateCoins;
-import epam.lab.task1.entity.OtherSweets;
+import epam.lab.task1.entity.Lollypop;
 import epam.lab.task1.entity.Sweets;
 
 /**
@@ -21,7 +21,7 @@ public class Service {
         Sweets[] candies = new Sweets[3];
         candies[0] = new Chewy(5, 60, 12, CHEWY);
         candies[1] = new ChocolateCoins(10, 23, 15, COIN);
-        candies[2] = new OtherSweets(6, 19, 7, OTHER);
+        candies[2] = new Lollypop(6, 19, 7, OTHER);
 
         return candies;
     }
