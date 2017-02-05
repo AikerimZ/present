@@ -1,6 +1,6 @@
 package epam.lab.task1;
 
-import epam.lab.task1.entity.Sweets;
+import epam.lab.task1.entities.Sweets;
 import epam.lab.task1.service.Service;
 
 import java.util.Arrays;
@@ -16,8 +16,8 @@ public class MainPresent {
         for (Sweets c : candies) {
             System.out.println(c.getName() + ", " + c.getDescription());
         }
-        Service.findBySugar();
-        Service.collectGift();
+        Service.findBySugar(candies);
+        Service.collectGift(candies);
 
 
 

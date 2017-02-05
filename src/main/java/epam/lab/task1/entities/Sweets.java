@@ -1,4 +1,4 @@
-package epam.lab.task1.entity;
+package epam.lab.task1.entities;
 
 /**
  */
@@ -44,8 +44,8 @@ public abstract class Sweets implements Comparable{
     @Override
     public String toString() {
         return "Sweets: (" +
+                "name = " + getName() + ", " +
                 "weight = " + getWeight() + ", " +
-                "sugar = " + getSugar() + ", " +
-                "name = " + getName();
+                "sugar = " + getSugar();
     }
 }

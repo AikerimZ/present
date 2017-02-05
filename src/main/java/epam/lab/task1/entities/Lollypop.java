@@ -1,4 +1,4 @@
-package epam.lab.task1.entity;
+package epam.lab.task1.entities;
 
 /**
  */
@@ -17,8 +17,8 @@ public class Lollypop extends Sweets {
     @Override
     public String toString() {
         return "Other sweets: (" +
+                "name = " + getName() + ", " +
                 "weight = " + getWeight() + ", " +
-                "sugar = " + getSugar() + ", " +
-                "name = " + getName();
+                "sugar = " + getSugar();
     }
 }

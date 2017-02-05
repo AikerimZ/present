@@ -1,9 +1,9 @@
 package epam.lab.task1.service;
 
-import epam.lab.task1.entity.Chewy;
-import epam.lab.task1.entity.ChocolateCoins;
-import epam.lab.task1.entity.Lollypop;
-import epam.lab.task1.entity.Sweets;
+import epam.lab.task1.entities.Chewy;
+import epam.lab.task1.entities.ChocolateCoins;
+import epam.lab.task1.entities.Lollypop;
+import epam.lab.task1.entities.Sweets;
 
 /**
  * 04.02.2017
@@ -20,29 +20,27 @@ public class Service {
 
         Sweets[] candies = new Sweets[3];
         candies[0] = new Chewy(5, 60, 12, CHEWY);
-        candies[1] = new ChocolateCoins(10, 23, 15, COIN);
+        candies[1] = new ChocolateCoins(10, 23, 15, COIN, 10);
         candies[2] = new Lollypop(6, 19, 7, OTHER);
 
         return candies;
     }
 
-    public static int collectGift(){
+    public static int collectGift(Sweets[] candies){
 
         int weight = 0;
-        Sweets[] c = create();
 
-        for (int i=0; i < c.length; i++){
-            weight += c[i].getWeight();
+        for (int i=0; i < candies.length; i++){
+            weight += candies[i].getWeight();
         }
 
         System.out.println(weight);
         return weight;
     }
 
-    public static String findBySugar (){
+    public static String findBySugar (Sweets[] candies){
 
         String found = "";
-        Sweets[] candies = create();
 
         for (int i=0; i < candies.length; i++){
             if (candies[i].getSugar() > MIN && candies[i].getSugar() < MAX){
